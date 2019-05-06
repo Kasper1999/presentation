@@ -1,0 +1,106 @@
+div.slides {
+  font-size: 20px;
+}
+
+section.preview {
+  font-size: 100px;
+}
+
+section.preview h1 {
+  margin-top: 140px;
+}
+
+section.preview p {
+  font-size: 30px;
+  float: right;
+  margin-top: 135px;
+}
+
+section.introduction p{
+  width: 100%;
+  font-size: 28px;
+}
+section.introduction-definition img {
+  text-align: left;
+  margin: 0 auto;
+  width: 45%;
+}
+section.introduction-principle img {
+  text-align: left;
+  margin: 0 auto;
+  width: 70%;
+}
+
+section.languages {
+  width: 100%;
+  font-size: 28px;
+}
+
+section.languages-js img {
+  text-align: left;
+  margin: 0 auto;
+  width: 70%;
+  margin-bottom: 15px;
+}
+
+section.languages-js h3 {
+  font-size: 24px;
+}
+
+section.languages-all img {
+  width: 100%;
+}
+
+section.documentation-how p {
+	padding-top: 50px;
+	font-size: 28px;
+}
+
+section.documentation-how-div {
+	width: 100%; 
+	display: inline-block; 
+	vertical-align: middle; 
+	float: left;
+}
+
+section.documentation-hierarchy img,
+section.nodes-tree img {
+  border: 0;
+  margin: 0;
+  width: 75%;
+}
+
+section.documentation-important .additionally {
+	list-style-type: none;
+}
+
+section.nodes-navigate img {
+  border: 0;
+  margin: 0;
+  width: 90%;
+}
+
+#navigate{
+	width: 40%;
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	padding-top: 45px;
+}
+
+code {
+  line-height: 1.7em !important;
+  font-size: 40px;
+}
+
+.dom-img {
+  width: 59%; 
+  display: inline-block; 
+  vertical-align: middle;
+}
+
+section.positioning img {
+  border: 0;
+  margin: 0;
+  width: 70%;
+}

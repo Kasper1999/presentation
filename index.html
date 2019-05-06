@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+		<link rel="stylesheet" type='text/css' href="css/my.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class='preview'>
+					<h1>DOM</h1>
+					<p>Kasperovich Aleksander</p>
+				</section>
+				<section class='introduction'>
+					<section class='introduction-definition'>
+						<p>The Document Object Model (DOM) is a programming interface for HTML and XML documents.</p>
+						<img src='./img/11.png'>
+					</section>
+					<section class='introduction-principle'>
+						<p>The DOM is an object-oriented representation of the web page, which can be modified with a scripting language such as JavaScript.</p>
+						<img src='./img/js-d.png'>
+					</section>
+				</section>
+				<section class='languages'>
+					<section class='languages-js'>
+							<h2>DOM and JavaScript</h2>
+							<img src='./img/js.png'>
+							<h3>API (HTML or XML page) = DOM + JS (scripting language)</h3>		
+					</section>
+					<section class='languages-all'>
+						<img src='./img/all.jpg'>
+					</section>
+				</section>
+				<section class="documentation">
+					<section class="documentation-how">
+						<h2>How Do I Access the DOM?</h2>
+						<p>This JavaScript will display an alert when the document is loaded:</p>
+						<div class="documentation-how-div">
+<pre><code class="xml" id="html1"> 
+   &lt;body onload="window.alert('Welcome to my home page!');"&gt;
+
+</code class="javascript"></pre>
+						</div>
+					</section>
+					<section class="documentation-hierarchy">
+						<h2>DOM class hierarchy</h2>
+						<img src="img/dom-class-hierarchy.png">
+					</section>
+					<section class="documentation-important">
+						<h2>Important Data Types</h2>
+						<ul>
+							<li class="fragment">Document</li>
+							<li class="fragment">Element</li>
+							<li class="fragment">NodeList</li>
+							<li class="fragment additionally">
+								<ul>
+									<li>list.item(1)</li>
+									<li>list[1]</li>
+								</ul>
+							</li>
+							<li class="fragment">Attribute</li>
+							<li class="fragment">NamedNodeMap</li>
+						</ul>
+					</section>
+				</section>
+				<section class="nodes">
+					<section class="nodes-dom">
+						<h2>DOM nodes</h2>
+						<ul>
+							<li class="fragment">Element nodes</li>
+							<li class="fragment">Attribute nodes</li>
+							<li class="fragment">Text nodes</li>
+						</ul>
+					</section>
+					<section class="nodes-tree">
+						<h2>DOM Node Tree</h2>
+						<img src="img/nodetree.png">
+					</section>
+					<section class="nodes-navigate">
+						<h2>Navigation</h2>
+						<div class="fragment dom-img" data-fragment="1">
+							<img src="img/navigate.png">
+						</div>
+						<div class="fragment" id="navigate">
+							<ul>
+									<li>parentNode</li>
+									<li>childNodes</li>
+									<li>firstChild</li>
+									<li>lastChild</li>
+									<li>nextSibling</li>
+									<li>previousSibling</li>
+							</ul>
+							<p><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Node">more</a></p>
+						</div>
+					</section>
+				</section>
+				<section class="dom">
+						<section class="dom-properties">
+							<h3>DOM Element</h3>
+							<h4>properties</h4>
+							<div class="fragment">
+								<ul>
+										<li>element.attributes</li>
+										<li>element.classList</li>
+										<li>element.className</li>
+										<li>element.clientHeight</li>
+										<li>element.clientLeft</li>
+										<li>element.id</li>
+								</ul>
+								<p><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/">more</a></p>
+							</div>
+						</section>
+						<section class="dom-methods">
+								<h3>DOM Element</h3>
+								<h4>methods</h4>
+								<div class="fragment">
+<pre><code class="javascript">elem.getElementById(id)</code></pre>
+<pre><code class="javascript">elem.getElementsByName(name)</code></pre>
+<pre><code class="javascript">elem.getElementsByClassName(className)</code></pre>
+<pre><code class="javascript">elem.getElementsByTagName(tagName)</code></pre>
+<pre><code class="javascript">elem.querySelector(cssSelector)</code></pre>
+								</div>
+						</section>
+				</section>
+				<section class="html-element">
+					<h2>HTMLElement</h2>
+				</section>
+				<section class="positioning">
+					<h2>Positioning and scrolling</h2>
+					<div class="fragment" data-fragment="1">
+						<img src="img/element-size-js.png" alt="HTMLElement properties">
+					</div>
+				</section>
+				<section class='end'>
+					<h1> Thanks for watching</h1>
+				</section>	
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
